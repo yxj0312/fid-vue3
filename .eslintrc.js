@@ -7,15 +7,15 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     'airbnb-base',
   ],
-  parser: "vue-eslint-parser",
+  parser: 'vue-eslint-parser',
   parserOptions: {
-    ecmaVersion: 12,
-    sourceType: 'module',
+    parser: 'babel-eslint',
   },
   plugins: [
     'vue',
   ],
   rules: {
     // 'vue/no-unused-vars': 'error'
+    'no-plusplus': 'off',
   },
 };
