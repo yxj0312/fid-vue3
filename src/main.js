@@ -1,8 +1,12 @@
 import { createApp } from 'vue';
-import router from './router';
 import App from './App.vue';
+import router from './router';
 import './index.css';
 
-const app = createApp(App);
+import ApiService from './common/api.service';
+
+export const app = createApp(App);
 app.use(router);
+ApiService.init();
 app.mount('#app');
+export default app;
