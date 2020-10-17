@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
-import './index.css';
+import './assets/styles/index.css';
 
 import ApiService from './common/api.service';
 
