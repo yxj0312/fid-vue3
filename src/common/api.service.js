@@ -11,6 +11,16 @@ const ApiService = {
     app.use(VueAxios, axios);
     app.axios.defaults.baseURL = API_URL;
   },
+  query(resource, params) {
+    return app.axios.get(resource, params).catch((error) => {
+      throw new Error(`ApiService ${error}`);
+    });
+  },
+  get(resource) {
+    return app.axios.get(`${resource}`).catch((error) => {
+      throw new Error(`ApiService ${error}`);
+    });
+  },
 };
 
 export default ApiService;
