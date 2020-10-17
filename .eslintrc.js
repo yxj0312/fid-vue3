@@ -17,5 +17,8 @@ module.exports = {
   rules: {
     // 'vue/no-unused-vars': 'error'
     'no-plusplus': 'off',
+    'max-len': ['error', {
+      code: 200, ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true,
+    }],
   },
 };
