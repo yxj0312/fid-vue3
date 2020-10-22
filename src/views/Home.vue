@@ -34,6 +34,11 @@
       </div>
       <div>456</div>
     </div>
+    <div class="mt-16">
+      <h3 class="text-gray-600 text-2xl font-medium">
+        Fashions
+      </h3>
+    </div>
   </div>
 </template>
 
