@@ -1,11 +1,12 @@
 import { createStore } from 'vuex';
-
-import home from './home.module.ts';
+import { State, state } from './state';
+// import home from './home.module.ts';
 
 const store = createStore({
-  modules: {
-    home,
-  },
+  state,
+  // modules: {
+  //   home,
+  // },
 });
 
 export default store;
