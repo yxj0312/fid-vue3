@@ -1,4 +1,4 @@
-import {State} from '../state'
+import {State} from './store'
 
 declare module "@vue/runtime-core" {
     // Declare your own store states.
