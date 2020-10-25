@@ -53,12 +53,21 @@
 </template>
 
 <script>
+import { useStore } from 'vuex';
 import Product from '../components/Product.vue';
 
 export default {
   name: 'Home',
   components: {
     Product,
+  },
+
+  setup() {
+    const store = useStore();
+
+    return {
+      Products: store.state.Product,
+    };
   },
 
 };
