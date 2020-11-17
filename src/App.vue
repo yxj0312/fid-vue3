@@ -6,7 +6,7 @@
   <FidFooter />
 </template>
 
-<script>
+<script lang="ts">
 import FidHeader from './components/TheHeader.vue';
 import FidFooter from './components/TheFooter.vue';
 
