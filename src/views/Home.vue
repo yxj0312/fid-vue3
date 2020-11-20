@@ -65,9 +65,9 @@ export default {
   setup() {
     const store = useStore();
 
-    return {
-      Products: store.state.Product,
-    };
+    // return {
+    //   Products: store.state.Product,
+    // };
   },
 
 };
