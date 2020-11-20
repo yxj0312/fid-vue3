@@ -7,14 +7,15 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue';
 import FidHeader from './components/TheHeader.vue';
 import FidFooter from './components/TheFooter.vue';
 
-export default {
+export default defineComponent({
   name: 'App',
   components: {
     FidHeader,
     FidFooter,
   },
-};
+})
 </script>
