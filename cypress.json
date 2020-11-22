@@ -1,0 +1,7 @@
+{
+  "baseUrl": "",
+  "experimentalNetworkStubbing": true,
+  "chromeWebSecurity": false
+
+  
+}
