@@ -3,3 +3,8 @@ node_modules
 dist
 *.local
 .idea
+*.iml
+cypress/videos
+cypress/screenshots
+coverage
+.vscode
