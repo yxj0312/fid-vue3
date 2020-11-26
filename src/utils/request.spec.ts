@@ -3,6 +3,8 @@ import FetchRequest, { FetchRequestOptions } from 'src/utils/request'
 import mockFetch from 'src/utils/test/mock-fetch'
 import { Either, fail, isEither, success } from 'src/utils/either'
 
+import { NetworkError } from 'src/types/error'
+
 beforeEach(() => {
   mockFetch({ type: 'body' })
 })
