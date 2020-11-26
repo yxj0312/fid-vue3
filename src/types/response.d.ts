@@ -1,7 +1,7 @@
 declare interface ProductResponse {
-    product: Product
+  product: Product
 }
 
 declare interface ProductsResponse {
-    products: Product[]
+  products: Product[]
 }
