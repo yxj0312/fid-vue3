@@ -53,8 +53,8 @@
 </template>
 
 <script>
-import { useStore } from 'vuex';
-import Product from '../components/Product.vue';
+// import { useStore } from 'vuex'
+import Product from '../components/Product.vue'
 
 export default {
   name: 'Home',
@@ -62,13 +62,13 @@ export default {
     Product,
   },
 
-  setup() {
-    const store = useStore();
+  setup () {
+    // const store = useStore();
 
     // return {
     //   Products: store.state.Product,
     // };
   },
 
-};
+}
 </script>
