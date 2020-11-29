@@ -24,3 +24,18 @@
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import { computed, defineComponent, reactive } from 'vue'
+import { getProducts } from '../services/product/getProducts'
+export default {
+  name: 'Product',
+
+  async setup () {
+    const products = reactive<ProductResponse>(await getProducts)
+    return {
+      products,
+    }
+  },
+}
+</script>
