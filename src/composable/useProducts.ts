@@ -13,8 +13,19 @@ export function useProducts () {
     let responsePromise: null | Promise<ProductsResponse> = null
 
     responsePromise = getProducts()
+
     if (responsePromise !== null) {
       const response = await responsePromise
+      products.value = response
+    } else {
+      throw new Error('Product type not supported')
     }
+  }
+
+  const { active: articlesDownloading, run: runWrappedFetchArticles } = createAsyncProcess(fetchProducts)
+
+  return {
+    fetchProducts: runWrappedFetchArticles,
+    articlesDownloading,
   }
 }
