@@ -5,5 +5,6 @@ module.exports = {
   "singleQuote": true,
   "trailingComma": "none",
   "bracketSpacing": true,
-  "semi": false
+  "semi": false,
+  "endOfLine": 'auto',
 }
