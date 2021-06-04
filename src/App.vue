@@ -1,9 +1,7 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <!-- <router-link to="/about">About</router-link> -->
-  </div>
-  <router-view />
+  <main class="pt-16 flex flex-col flex-grow overflow-hidden">
+    <router-view />
+  </main>
 </template>
 
 <style>
