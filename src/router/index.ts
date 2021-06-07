@@ -4,6 +4,8 @@ import { App } from 'vue'
 
 import Home from "../views/Home.vue";
 
+import common from '@/router/common'
+
 export const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -13,6 +15,7 @@ export const routes: Array<RouteRecordRaw> = [
     meta: {
       title: '首页'
     },
+    children: [...common]
   }
 ]
 
