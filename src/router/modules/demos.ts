@@ -1,5 +1,5 @@
 import { RouteRecordRaw } from 'vue-router'
-import { RouterTransition } from '@/components/transition'
+// import { RouterTransition } from '@/components/transition'
 
 const routeName = 'demos'
 
@@ -8,7 +8,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/demos',
     name: routeName,
     redirect: '/demos/custom-a-custom-modal',
-    component: RouterTransition,
+    // component: RouterTransition,
     meta: {
       title: 'demo演示',
       icon: 'icon-zhuomian'
