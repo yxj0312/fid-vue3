@@ -421,7 +421,7 @@
 <script lang="ts">
 import { defineComponent, reactive } from 'vue'
 
-defineComponent({
+export default defineComponent({
   name: 'Header',
   setup() {
     const state = reactive({
