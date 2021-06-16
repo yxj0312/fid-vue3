@@ -2,19 +2,21 @@
   <FidHeader />
   <!-- <main>
     <tabsView />
-  </main>
-  <FidFooter /> -->
+  </main> -->
+  <FidFooter />
 </template>
 
 <script lang="ts">
 import { defineComponent, ref, h, computed } from 'vue'
 import FidHeader from './header/index.vue'
+import FidFooter from './footer/index.vue'
 
 export default defineComponent({
   name: 'Layout',
 
   components: {
-    FidHeader
+    FidHeader,
+    FidFooter
   },
 
   setup() {
