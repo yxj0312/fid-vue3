@@ -1,5 +1,8 @@
 <template>
   <FidHeader />
+  <section
+    class="relative z-10 text-center max-w-screen-lg xl:max-w-screen-xl mx-auto min-h-screen"
+  ></section>
   <!-- <main>
     <tabsView />
   </main> -->
